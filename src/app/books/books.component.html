@@ -1,0 +1,3 @@
+<div *ngFor="let books of booksData.results">
+    <app-card *ngIf="books.section=='books' "[abstract]="books.abstract" [byline]="books.byline" [date]="books.created_date"[itemtype]="books.item_type"[section]="books.section" [title]="books.title"[short]="books.short_url"[image]="books.multimedia[books.multimedia.length-1].url"></app-card>
+    </div>

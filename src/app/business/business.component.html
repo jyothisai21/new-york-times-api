@@ -1,0 +1,4 @@
+<div *ngFor="let business of businessData.results">
+    <app-card *ngIf="business.section=='business' "[abstract]="business.abstract" [byline]="business.byline" [date]="business.created_date"[itemtype]="business.item_type"[section]="business.section" [title]="business.title"[short]="business.short_url"[image]="business.multimedia[business.multimedia.length-1].url"></app-card>
+    </div>
+    

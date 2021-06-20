@@ -1,0 +1,3 @@
+<div *ngFor="let science of scienceData.results">
+    <app-card *ngIf="science.section=='science' "[abstract]="science.abstract" [byline]="science.byline" [date]="science.created_date"[itemtype]="science.item_type"[section]="science.section" [title]="science.title"[short]="science.short_url"[image]="science.multimedia[science.multimedia.length-1].url"></app-card>
+    </div>

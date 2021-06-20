@@ -1,0 +1,10 @@
+.size{
+    max-width: 40vw;
+}
+.picsize{
+    width:20vw;
+    height: 30vw;
+}
+.text-muted{
+    line-height: 12px;
+}

@@ -1,0 +1,3 @@
+<div *ngFor="let style of styleData.results">
+    <app-card *ngIf="style.section=='style'  "[abstract]="style.abstract" [byline]="style.byline" [date]="style.created_date"[itemtype]="style.item_type"[section]="style.section" [title]="style.title"[short]="style.short_url"[image]="style.multimedia[style.multimedia.length-1].url"></app-card>
+    </div>

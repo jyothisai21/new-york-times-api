@@ -1,0 +1,3 @@
+<div *ngFor="let realestate of realestateData.results">
+    <app-card *ngIf="realestate.section=='realestate' "[abstract]="realestate.abstract" [byline]="realestate.byline" [date]="realestate.created_date"[itemtype]="realestate.item_type"[section]="realestate.section" [title]="realestate.title"[short]="realestate.short_url"[image]="realestate.multimedia[realestate.multimedia.length-1].url"></app-card>
+    </div>

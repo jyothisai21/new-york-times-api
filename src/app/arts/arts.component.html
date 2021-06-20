@@ -1,0 +1,3 @@
+<div *ngFor="let arts of artsData.results">
+    <app-card *ngIf="arts.section=='arts' "[abstract]="arts.abstract" [byline]="arts.byline" [date]="arts.created_date"[itemtype]="arts.item_type"[section]="arts.section" [title]="arts.title"[short]="arts.short_url"[image]="arts.multimedia[arts.multimedia.length-1].url"></app-card>
+    </div>

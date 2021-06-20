@@ -1,0 +1,4 @@
+<div *ngFor="let health of healthData.results">
+    <app-card *ngIf="health.section=='health' "[abstract]="health.abstract" [byline]="health.byline" [date]="health.created_date"[itemtype]="health.item_type"[section]="health.section" [title]="health.title"[short]="health.short_url"[image]="health.multimedia[health.multimedia.length-1].url"></app-card>
+    </div>
+    

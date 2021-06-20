@@ -1,0 +1,3 @@
+<div *ngFor="let ny of nyData.results">
+    <app-card *ngIf="ny.section=='nyregion' "[abstract]="ny.abstract" [byline]="ny.byline" [date]="ny.created_date"[itemtype]="ny.item_type"[section]="ny.section" [title]="ny.title"[short]="ny.short_url"[image]="ny.multimedia[ny.multimedia.length-1].url"></app-card>
+    </div>

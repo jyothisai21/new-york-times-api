@@ -1,0 +1,7 @@
+
+   
+    <div *ngFor="let world of worldData.results">
+        <app-card *ngIf="world.section=='world' "[abstract]="world.abstract" [byline]="world.byline" [date]="world.created_date"[itemtype]="world.item_type"[section]="world.section" [title]="world.title"[short]="world.short_url"[image]="world.multimedia[world.multimedia.length-1].url"></app-card>
+        </div>
+   
+

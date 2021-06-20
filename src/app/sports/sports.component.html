@@ -1,0 +1,3 @@
+<div *ngFor="let sports of sportsData.results">
+    <app-card *ngIf="sports.section=='sports' "[abstract]="sports.abstract" [byline]="sports.byline" [date]="sports.created_date"[itemtype]="sports.item_type"[section]="sports.section" [title]="sports.title"[short]="sports.short_url"[image]="sports.multimedia[sports.multimedia.length-1].url"></app-card>
+    </div>

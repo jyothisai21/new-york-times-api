@@ -1,0 +1,3 @@
+<div *ngFor="let travel of travelData.results">
+    <app-card *ngIf="travel.section=='travel' "[abstract]="travel.abstract" [byline]="travel.byline" [date]="travel.created_date"[itemtype]="travel.item_type"[section]="travel.section" [title]="travel.title"[short]="travel.short_url"[image]="travel.multimedia[travel.multimedia.length-1].url"></app-card>
+    </div>

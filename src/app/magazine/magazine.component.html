@@ -1,0 +1,3 @@
+<div *ngFor="let magazine of magazineData.results">
+    <app-card *ngIf="magazine.section=='magazine' "[abstract]="magazine.abstract" [byline]="magazine.byline" [date]="magazine.created_date"[itemtype]="magazine.item_type"[section]="magazine.section" [title]="magazine.title"[short]="magazine.short_url"[image]="magazine.multimedia[magazine.multimedia.length-1].url"></app-card>
+    </div>

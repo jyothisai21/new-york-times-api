@@ -1,0 +1,4 @@
+<div *ngFor="let us of usData.results">
+    <app-card *ngIf="us.section=='us' "[abstract]="us.abstract" [byline]="us.byline" [date]="us.created_date"[itemtype]="us.item_type"[section]="us.section" [title]="us.title"[short]="us.short_url"[image]="us.multimedia[us.multimedia.length-1].url"></app-card>
+    </div>
+    

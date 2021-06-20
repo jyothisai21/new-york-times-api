@@ -1,0 +1,4 @@
+<div *ngFor="let opinion of opinionData.results">
+    <app-card *ngIf="opinion.section=='opinion' "[abstract]="opinion.abstract" [byline]="opinion.byline" [date]="opinion.created_date"[itemtype]="opinion.item_type"[section]="opinion.section" [title]="opinion.title"[short]="opinion.short_url"[image]="opinion.multimedia[opinion.multimedia.length-1].url"></app-card>
+    </div>
+    
